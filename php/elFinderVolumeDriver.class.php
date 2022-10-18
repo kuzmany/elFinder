@@ -5492,7 +5492,7 @@ abstract class elFinderVolumeDriver
      **/
     protected function tmbname($stat)
     {
-        $name = $stat['hash'] . (isset($stat['ts']) ? $stat['ts'] : '') . '.png';
+        $name = $stat['hash'] .  '.png';
         if (strlen($name) > 255) {
             $name = $this->id . md5($stat['hash']) . $stat['ts'] . '.png';
         }
